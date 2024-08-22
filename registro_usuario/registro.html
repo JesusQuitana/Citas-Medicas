@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale:1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../src/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../src/css/interfaz.css">
+	<link rel="preload" href="../src/css/normalize.css" as="styles">
+	<link rel="stylesheet" href="../src/css/normalize.css">
+	<link rel="preload" href="../src/css/styles.css" as="styles">
+	<link rel="stylesheet" href="../src/css/styles.css">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand " href="../index.html"><div style="width: 100%; height: 100%; margin-left: 50px;"><span style="color: black; font-size: 50px; font-weight: 400; word-wrap: break-word">Medi</span><span style="color: #85C4FF; font-size: 50px; font-weight: 400; word-wrap: break-word">S</span><span style="color: black; font-size: 50px; font-weight: 400; word-wrap: break-word">alud</span></div></a>
+		  	<button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav" style="margin-left: auto; margin-right: 100px;">
+					<a class="nav-link-offset-2 link-underline link-underline-opacity-100"  style="margin-left: 10%; font-weight: bold;" href="../login/usuario/login.html">Volver</a>
+				</div>
+		  	</div>
+		</div>
+	</nav>
+	
+
+<div class="contenedor-registro">
+		<form action="compruebaRegistro.php" method="post" class="registro">
+			<h2 class="registro-titulo">Registro</h2>
+			<div class="registro-campos"><label>Nombre</label><input type="text" placeholder="Nombre" name="nombre"/></div>
+			<div class="registro-campos registro-cedula"><label>Cedula</label><div><select name="nacionalidad">
+			<option>V</option>
+			<option>E</option>
+			</select><input type="text" placeholder="Cedula" name="cedula"/></div></div>
+			<div class="registro-campos registro-telefono"><label>Telefono</label><div><select name="cod-area">
+			<option>0412</option>
+			<option>0414</option>
+			<option>0424</option>
+			<option>0212</option>
+			</select><label>-</label><input type="tel" placeholder="Telefono" name="telefono"/></div></div>
+			<div class="registro-campos"><label>Correo</label><input type="email" placeholder="Correo" name="email"/></div>
+			<div class="registro-campos"><label>Usuario</label><input type="text" placeholder="Usario" name="usuario"/></div>
+			<div class="registro-campos"><label>Contraseña</label><input type="password" placeholder="Contraseña" name="password"/></div>
+			<div class="registro-campos"><label>Confirma Contraseña</label><input type="password" placeholder="Confirma Contraseña"/></div>
+			<div class="registro-enviar"><input class="registro-enviar-1" type="submit" value="Registrase"/></div>
+		</form>
+	</div>
+	
+	<a class="fixed-bottom btn btn-outline-dark" style="text-align: center; font-size: 25px; background-color: rgb(147, 176, 255);" href="../acerca_de/nosotros.html">NOSOTROS</a>
+</body>
+</html>

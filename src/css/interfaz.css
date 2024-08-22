@@ -1,0 +1,50 @@
+.centrado {
+text-align: center;
+vertical-align: middle;
+}
+
+.centradoabsoluto {
+
+    position: absolute;
+    
+    top: 50%;
+    
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    }
+    
+    .centradoabajo {
+
+      position: absolute;
+      
+      bottom: 5px;
+      
+      left: 50%;
+      
+      transform: translate(-50%, -50%);
+      
+      }
+  
+.grid {
+    display: grid;
+    place-items: center;;
+    height: 100px;
+    width: 200px;
+  
+    background: #ffff99;
+    color: #333;
+  }
+  .grid__content {
+    margin: auto;
+  }
+
+  .box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+  }

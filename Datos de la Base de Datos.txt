@@ -1,0 +1,42 @@
+Nombre de la Base de Datos: "usuarios_medicos"
+
+Tablas: {
+
+	�auditoria� {
+	  ID (PRIMARY- INT)
+	  USUARIO (TEXT)
+	  FECHA (TEXT)
+	  HORA (TEXT)
+	  ACCION (TEXT)
+	}
+	
+	��usuarios� {
+	  CEDULA (PRIMARY- VARCHAR[ LONGITUD/VALORES = 15] )
+	  NOMBRE (TEXT)
+	  TELEFONO (TEXT)
+	  CORREO (TEXT)
+	  USUARIO (TEXT)
+	  CLAVE (TEXT)
+	  TIPO (TEXT)
+	  
+	  {CREAR EN USUARIO, UN USUARIO QUE TENGA DE `USUARIO`= "admin" y la clave que sea}
+	}
+
+	�citas� {
+	  ID (PRIMARY- INT)
+	  CITAS (TEXT)
+	  ESPECIALIDAD (TEXT)
+	  DOCTOR (TEXT)
+	  USUARIO_AGENDA (TEXT)
+	  ESTATUS (TEXT)
+	  CEDULA (TEXT)
+	}
+	
+	�medicos_disponibles� {
+	  ID (PRIMARY- INT)
+	  DOCTOR (TEXT)
+	  ESPECIALIDAD (TEXT)
+	  FECHA MIN (TEXT)
+	  FECHA MAX (TEXT)
+	}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>MediSalud</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+	
+	<link rel="preload" href="src/css/bootstrap.min.css" as="style">
+	<link rel="stylesheet" href="src/css/bootstrap.min.css">
+	
+	<link rel="preload" href="src/css/interfaz.css" as="style">
+	<link rel="stylesheet" href="src/css/interfaz.css">
+	
+	<link rel="preload" href="src/css/normalize.css" as="style">
+	<link rel="stylesheet" href="src/css/normalize.css">
+	
+	<link rel="preload" href="src/css/styles.css" as="style">
+	<link rel="stylesheet" href="src/css/styles.css">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand " href="#"><div style="width: 100%; height: 100%; margin-left: 50px;"><span style="color: black; font-size: 50px; font-weight: 400; word-wrap: break-word">Medi</span><span style="color: #85C4FF; font-size: 50px; font-weight: 400; word-wrap: break-word">S</span><span style="color: black; font-size: 50px; font-weight: 400; word-wrap: break-word">alud</span></div></a>
+		  	<button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav" style="margin-left: auto; margin-right: 200px;">
+					<a class="nav-link-offset-2 link-underline link-underline-opacity-100"  style="margin-left: 40%; font-weight: bold;" href="login/usuario/login.html">Agendar</a>
+					<!--<a class="nav-link-offset-2 link-underline link-underline-opacity-100"  style="margin-left: 3%; font-weight: bold;" href="login/admin/login_admin.html">Administrador</a>-->
+					<a class="nav-link-offset-2 link-underline link-underline-opacity-100"  style="margin-left: 40%; font-weight: bold;" href="acerca_de/contacto.html">Contacto</a>
+				</div>
+		  	</div>
+		</div>
+	</nav>
+	
+	<section class="contenedor_index-1">
+		<h2>Especialidad para tu salud</h2>
+		<p>Contamos con los mejores especialistas</p>
+	</section>
+	
+	
+	<a class="fixed-bottom btn btn-outline-dark" style="text-align: center; font-size: 25px; background-color: rgb(147, 176, 255);" href="acerca_de/nosotros.html">NOSOTROS</a>
+	
+	<!--
+	<footer class="footer">
+		<h2 class="footer_titulo">Medi<span>S</span>alud</h2>
+		<div class="footer_contactos">
+			<div class="contacto">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+				<path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+				<path d="M15 19l2 2l4 -4" />
+				</svg>
+				<a class="nosotros_bar" href="nosotros.html">Nosotros</a>
+			</div>
+			<div class="contacto">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+				<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+				<path d="M16.5 7.5l0 .01" />
+				</svg>
+				<a href="#">Instagram</a>
+			</div>
+			<div class="contacto">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+				</svg>
+				<a href="#">Telegram</a>
+			</div>
+			<div class="contacto">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+				<path d="M3 6l9 6l9 -6" />
+				<path d="M15 18h6" />
+				<path d="M18 15l3 3l-3 3" />
+				</svg>
+				<a href="#">Correo</a>
+			</div>
+		</div>
+	</footer>
+	<p class="final">Todos los derechos Reservados ® || IUTA.</p>
+	-->
+		
+		
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
